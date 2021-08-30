@@ -1,48 +1,50 @@
-<header>
+<header class="header">
     <div class="container"> 
-        <a href="" class="logo">
+        <a href="/" class="logo">
             <picture>
                 <source srcset="" media="()">
             </picture>
         </a>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">How it’s made?</a></li>
-            <li><a href="">Our products</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <button type="button" class="button">Buy now</button>
+        <nav  class="header__list-nav-link">
+            <ul class="list">
+                <li><a class="link header__item-list-nav-link header__item-list-nav-link--color-pink" href="">Home</a></li>
+                <li><a class="link header__item-list-nav-link " href="">About us</a></li>
+                <li><a class="link header__item-list-nav-link " href="">How it’s made?</a></li>
+                <li><a class="link header__item-list-nav-link " href="">Our products</a></li>
+                <li><a class="link header__item-list-nav-link " href="">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="button-color-white">Buy now</button>
     </div>
 </header>
 
 <section class="hero">
     <div class="container">
-        <div>
-            <h1 class="title">ice cream made with pass ion</h1>
-            <ul>
-                <li><button type="button" class="button">Products</button></li>
-                <li><button type="button" class="button">How it’s made?</button></li>
+        <div class="hero__title-and-btn">
+            <h1 class="hero__secondary-title">ice cream made with <span class="title">passion</span></h1>
+            <ul class="hero__list-btn">
+                <li><button type="button" class=" button-color-pink">Products</button></li>
+                <li><button type="button" class=" button-color-white">How it’s made?</button></li>
             </ul>
         </div>
 
-        <div>
+        <div class="hero__some-cont">
             <picture>
                 <source srcset="" media="()">
             </picture>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <button type="button" class="button"> <svg><use></use></svg> </button>
+            <p class="hero__lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button type="button" class="arrow-button"> <svg><use></use></svg> </button>
         </div>
 
-        <ul>
-            <li>
-                <p>16</p>
-                <p>cafes</p>
+        <ul class="list hero__list-points-sale">
+            <li class="hero__items-cafes">
+                <p class="hero__item-numbers">16</p>
+                <p class="hero__item">cafes</p>
                 <svg><use></use></svg>
             </li>
-            <li>
-                <p>23</p>
-                <p>food trucks</p>
+            <li class="hero__items-food-trucks">
+                <p class="hero__item-numbers">23</p>
+                <p class="hero__item">food trucks</p>
                 <svg><use></use></svg>
             </li>
         </ul>
