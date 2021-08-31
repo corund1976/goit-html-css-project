@@ -1,0 +1,64 @@
+.header{
+    background: #FFB8CA;  // Предворительно
+}
+
+.header__item-list-nav-link{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.header__list-nav-link--mr:not(:last-child){
+    margin-right: 35px;
+}
+
+.header__item-list-nav-link--color-pink{
+    color: #D41443;
+}
+
+
+
+.header__list-nav-link{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-color-white{
+
+}
+
+.hero{
+    background: #FFB8CA;
+}
+
+.hero__lorem-text{
+
+}
+
+.hero__item-numbers{
+
+}
+
+.hero__item{
+
+}
+
+
+
+// MOBILE
+@media (min-width: 480px){
+
+}
+
+
+// TABLET
+@media (min-width: 768px){
+
+}
+
+
+// DESKTOP
+@media (min-width: 1200px){
+
+}
