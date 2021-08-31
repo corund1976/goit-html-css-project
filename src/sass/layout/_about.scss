@@ -1,0 +1,270 @@
+$accent-color: #D41443;
+$secondary-title-color: #FFA5BA;
+$description-color: #907E82;
+$section-background: #FFF5F6;
+
+.label-title {
+    font-family: Titan One, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary-title-color;
+  }
+  
+  .primary-title {
+    font-family: Titan One,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color:$accent-color;
+  }
+
+  .btn--red {
+    background:$accent-color;
+    color: white;
+    cursor: pointer;
+    transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
+    &:hover{
+      color: white;
+      background: #C7133E;
+    }
+    &:focus{
+      background: #C7133E;
+      outline: none;
+    }
+  }
+  
+  .btn--white {
+    color: $accent-color;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
+    &:hover{
+      background: #ECEBEB;
+    }
+    &:focus{
+      background: #ECEBEB;
+      outline: none;
+    }
+  }
+  .products {
+    .btn {
+      transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover {
+        box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) ;
+      }
+  
+      &:focus {
+        box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) ;
+        outline-color: $accent-color;
+      }
+    }
+  }
+
+.about {
+    width: 100%;
+    position: relative;
+    background: $section-background;
+    padding-top: 125px;
+    padding-bottom: 39px;
+    &__container {
+      background-color: $section-background;
+      width: 100%;
+    }
+    &__text {
+      margin-bottom: 15px;
+    }
+    &__title {
+      width: 220px;
+      margin: 0 auto;
+      margin-bottom: 26px;
+    }
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 130px;
+      padding-bottom: 66px;
+      &__container {
+        padding-bottom: 50px;
+        width: 100%;
+      }
+      &__text.label-title {
+        font-size: 26px;
+        line-height: 1.15;
+        margin-bottom: 16px;
+      }
+      &__title {
+        width: 100%;
+        height: 55px;
+        margin: 0;
+        &.primary-title {
+          font-size: 48px;
+          line-height: 1.15;
+        }
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 125px;
+      padding-bottom: 39px;
+      &__container {
+        padding-bottom: 55px;
+      }
+      &__text.label-title {
+        margin-bottom: 15px;
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+      }
+      &__title {
+        width: 100%;
+        height: 66px;
+        margin: 0;
+        &.primary-title {
+          font-size: 58px;
+          line-height: 1.14;
+          letter-spacing: 0.06em;
+        }
+      }
+    }
+  }
+  
+  .cow {
+    background-color: $section-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+      width: 280px;
+      height: 279px;
+      margin-bottom: 46px;
+    }
+    &__pre {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      font-family: DM Sans, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.62;
+      color: black;
+      text-align: left;
+      width: 220px;
+      padding-bottom: 33px;
+    }
+    &__text {
+      font-family: DM Sans, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.62;
+      color: $description-color;
+      text-align: left;
+      padding-bottom: 20px;
+      margin: 0;
+      width: 210px;
+      padding-bottom: 10px;
+      &__secondary {
+        font-family: DM Sans, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        color: $description-color;
+        text-align: left;
+        width: 220px;
+        padding-bottom: 20px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: stretch;
+      &__img {
+        width: 340px;
+        height: 339px;
+        margin-bottom: 0;
+      }
+      &__pre {
+        margin-left: 17px;
+        margin-top: 50px;
+      }
+      &__title {
+        width: 340px;
+        font-size: 14px;
+        line-height: 1.79;
+        padding-bottom: 25px;
+      }
+      &__text {
+        width: 340px;
+        font-size: 14px;
+        line-height: 1.79;
+        padding-bottom: 15px;
+        letter-spacing: 0.04em;
+        &__secondary {
+          font-size: 14px;
+          line-height: 1.79;
+          width: 340px;
+          padding-bottom: 62px;
+          letter-spacing: 0.04em;
+        }
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      &__img {
+        width: 516px;
+        height: 516px;
+      }
+      &__pre {
+        margin-left: 74px;
+        margin-top: 51px;
+        z-index: 3;
+      }
+      &__title {
+        width: 463px;
+        font-size: 16px;
+        line-height: 1.75;
+        padding-bottom: 35px;
+      }
+      &__text {
+        width: 463px;
+        font-size: 14px;
+        line-height: 1.93;
+        padding-bottom: 40px;
+  
+        &__secondary {
+          font-size: 14px;
+          line-height: 1.93;
+          width: 463px;
+          padding-bottom: 45px;
+        }
+      }
+    }
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 176px;
+    height: 44px;
+    color: $accent-color;
+    font-family: DM Sans, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    border-radius: 22px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.31;
+    }
+  }
