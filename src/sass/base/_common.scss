@@ -1,0 +1,40 @@
+/* ========== Сброс от Преподавателя ======== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+// Делаем изображения "отзывчивыми". При уменьшении размеров контейнера
+// картинка может становиться меньше оригинальной ширины,
+// а высота будет рассчитываться пропорционально
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+/* ======== Конец Сброс от Преподавателя ====== */
+
+.title {
+  // font-style: ;
+  text-transform: uppercase;
+}
