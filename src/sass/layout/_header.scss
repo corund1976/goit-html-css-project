@@ -9,13 +9,15 @@
     color: #fff;
 }
 
-.header__item-list-nav-link:not(:last-child){
+.header__list-nav-link--mr:not(:last-child){
     margin-right: 35px;
 }
 
 .header__item-list-nav-link--color-pink{
     color: #D41443;
 }
+
+
 
 .header__list-nav-link{
     display: flex;
