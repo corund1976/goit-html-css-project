@@ -16,16 +16,13 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
-// Делаем изображения "отзывчивыми". При уменьшении размеров контейнера
-// картинка может становиться меньше оригинальной ширины,
-// а высота будет рассчитываться пропорционально
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.list {
+li {
   list-style: none;
 }
 
@@ -33,6 +30,12 @@ img {
   text-decoration: none;
 }
 /* ======== Конец Сброс от Преподавателя ====== */
+
+.title {
+  font-family: 'Titan One', sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 
 body {
   background-color: var(--bg-color-base);
