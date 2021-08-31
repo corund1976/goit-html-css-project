@@ -1,11 +1,11 @@
 .advantages {
-        background-color: $section-background;
+        background-color: --bg-color-alt;
         padding-bottom: 145px;
         &__search {
         display: none;
         }
         &__container {
-        background-color: $section-background;
+        background-color: --bg-color-alt;
         }
         &__list {
         display: flex;
@@ -92,12 +92,12 @@
     }
     
     .icon-milkbucket::before {
-        background-image: url(/images/glass.png);
+        background-image: url(/images/glass2x.png);
         background-repeat: no-repeat;
         background-size: contain;
     }
     .icon-applebucket::before {
-        background-image: url(/images/apple.png);
+        background-image: url(/images/apple2x.png);
         background-repeat: no-repeat;
         background-size: contain;
         margin-top: 38px;
@@ -106,7 +106,7 @@
         }
     }
     .icon-lovemilk::before {
-        background-image: url(/images/heart.png);
+        background-image: url(/images/heart2x.png);
         background-repeat: no-repeat;
         background-size: contain;
         margin-top: 38px;
