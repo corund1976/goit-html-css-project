@@ -3,9 +3,11 @@
 }
 .customer-rev-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .customer-rev-item {
   text-align: center;
+  padding: 0 50px;
 }
 .customer-image {
   margin: 0 auto;
@@ -15,6 +17,13 @@
 }
 .customer-text {
   color: #000000;
+  background-image: repeating-linear-gradient(
+    to top,
+    #e1e1e1,
+    #e1e1e1 1px,
+    #ffffff 1px,
+    #ffffff 30px
+  );
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -22,25 +31,38 @@
   line-height: 2.55;
   /* or 31px */
 
-  // position: relative;
+  position: relative;
 }
 .customer-text::before {
-  content: url('../images/icons.svg#github');
+  content: url('../images/icons.svg#quotes-right');
   fill: #000000;
   display: block;
   width: 54px;
   height: 40px;
   // background-color: teal;
-  // position: absolute;
+  position: absolute;
 }
-.customer-text::after {
-  content: url();
-}
+// .customer-text::after {
+//   content: url('../images/three-dots-pink.png');
+//   display: block;
+//   width: 32px;
+//   height: 4px;
+//   margin: 47px auto 15px auto;
+//   // margin-top: 47px;
+//   // margin-bottom: 15px;
+// }
 .customer-description {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
   /* or 26px */
-
+  display: block;
   color: #000000;
+  &::before {
+    display: block;
+    content: url('../images/three-dots-pink.png');
+    width: 32px;
+    height: 4px;
+    margin: 47px auto 15px auto;
+  }
 }
