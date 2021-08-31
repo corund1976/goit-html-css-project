@@ -1,4 +1,73 @@
+$accent-color: #D41443;
+$secondary-title-color: #FFA5BA;
+$description-color: #907E82;
+$section-background: #FFF5F6;
 
+.label-title {
+    font-family: Titan One, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFA5BA;
+  }
+  
+  .primary-title {
+    font-family: Titan One,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+  }
+  
+  .btn--red {
+    background: #D41443;
+    color: white;
+    cursor: pointer;
+    transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
+    &:hover{
+      color: white !important;
+      background: #C7133E !important;
+    }
+    &:focus{
+      background: #C7133E !important;
+      outline: none;
+    }
+  }
+  
+  .btn--white {
+    color: #D41443 !important;
+    background-color: #FFFFFF !important;
+    cursor: pointer;
+    transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
+    &:hover{
+      background: #ECEBEB !important;
+    }
+    &:focus{
+      background: #ECEBEB !important;
+      outline: none;
+    }
+  }
+  .products {
+    .btn {
+      transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover {
+        box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) !important;
+      }
+  
+      &:focus {
+        box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) !important;
+        outline-color: $accent-color;
+      }
+    }
+  }
 
 .about {
     width: 100%;
@@ -209,7 +278,7 @@
   .milk {
     width: 100%;
     height: 133px;
-    background-image: url(/images/milk_background.png);
+    // background-image: url(/images/milk_background.png);
     background-repeat: no-repeat;
     background-size: 100% 133px;
     position: absolute;
@@ -226,23 +295,23 @@
       position: absolute;
       bottom: -30px;
     }
-    // MOBIL 2x
-          @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-            screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-            screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
-            screen and (max-width: 767px) and (min-resolution: 192dpi),
-            screen and (max-width: 767px) and (min-resolution: 2dppx) {
-            background-image: url(../images/about/mob/how-its-made-mobile@2x.png);
-          }
+    // // MOBIL 2x
+    //       @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    //         screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    //         screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1),
+    //         screen and (max-width: 767px) and (min-resolution: 192dpi),
+    //         screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    //         background-image: url(../images/about/mob/how-its-made-mobile@2x.png);
+    //       }
   
     
   
-          // desktop 2x
-          @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-            screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-            screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
-            screen and (min-width: 1200px) and (min-resolution: 192dpi),
-            screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-            background-image: url(../images/about/pc/how-its-made-desktop@2x.png);
-          }
+    //       // desktop 2x
+    //       @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    //         screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    //         screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+    //         screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    //         screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    //         background-image: url(../images/about/pc/how-its-made-desktop@2x.png);
+    //       }
   }
