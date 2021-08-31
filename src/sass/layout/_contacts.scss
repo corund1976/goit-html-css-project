@@ -1,10 +1,10 @@
 // background
 .contact {
-  background-image: linear-gradient(to top, #fff5f6 96.7%, white 3.3%);
+  background-image: linear-gradient(to top, var(--bg-color-alt) 96.7%, white 3.3%);
 }
 @media screen and (min-width: 768px) {
   .contact {
-    background-image: linear-gradient(to top, #fff5f6 90.5%, white 9.5%);
+    background-image: linear-gradient(to top, var(--bg-color-alt) 90.5%, white 9.5%);
   }
 }
 .visually-hidden {
@@ -89,7 +89,7 @@
   letter-spacing: 0.04em;
   max-width: 130px;
   height: 16px;
-  color: #ffffff;
+  color: var(--btn-color__alt);
 }
 @media screen and (min-width: 768px) {
   .contact-item__subtitle-main {
@@ -129,7 +129,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: var(--txt-color-base);
 }
 @media screen and (min-width: 768px) {
   .contact-info__text {
@@ -170,7 +170,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: var(--txt-color-base);
 }
 @media screen and (min-width: 767px) {
   .contact-info__address-link {
@@ -218,7 +218,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--btn-color__alt);
   border: none;
   cursor: pointer;
   width: 161.45px;
@@ -238,8 +238,8 @@
   }
 }
 .button-bot {
-  background: #ffffff;
-  color: #d41443;
+  background: var(--bg-color-base);
+  color: var(--btn-color__base);
   border-radius: 22px;
   font-style: normal;
   font-weight: bold;
