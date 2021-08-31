@@ -1,22 +1,27 @@
 .customer-rev {
-  padding: 40px 0;
+  padding-top: 80px;
+  padding-bottom: 86px;
 }
 .customer-rev-list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+  }
 }
 .customer-rev-item {
-  text-align: center;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 50px;
 }
-.customer-image {
-  margin: 0 auto;
-}
-.customer-wrap {
-  position: relative;
-}
-.customer-text {
-  color: #000000;
+.customer-text-decoration {
+  max-width: 180px;
+  text-align: center;
+  padding: 0 5px;
   background-image: repeating-linear-gradient(
     to top,
     #e1e1e1,
@@ -24,24 +29,66 @@
     #ffffff 1px,
     #ffffff 30px
   );
-  font-family: DM Sans;
-  font-style: normal;
+  @media screen and (min-width: 768px) {
+    max-width: 524px;
+    .customer-text {
+      max-width: 460px;
+    }
+    background-image: repeating-linear-gradient(
+      to top,
+      #e1e1e1,
+      #e1e1e1 1px,
+      #ffffff 1px,
+      #ffffff 30px
+    );
+  }
+}
+// .customer-picture {
+//   width: 100%;
+//   height: ;
+// }
+.customer-image {
+  margin: 0 auto 57px auto;
+}
+.customer-wrap {
+  // position: relative;
+  &::before {
+    display: block;
+    content: url('../images/three-dots-pink.png');
+    width: 32px;
+    height: 4px;
+    margin: 47px auto 18px auto;
+  }
+}
+.customer-text {
+  color: #000000;
+
+  // font-family: DM Sans;
+  // font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
   /* or 31px */
 
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    // font-weight: 500;
+    font-size: 14px;
+    line-height: 2.16;
+    /* or 30px */
+    // letter-spacing: 0.04em;
+  }
 }
-.customer-text::before {
-  content: url('../images/icons.svg#quotes-right');
-  fill: #000000;
-  display: block;
-  width: 54px;
-  height: 40px;
-  // background-color: teal;
-  position: absolute;
-}
+// .customer-text::before {
+//   content: url('../images/sprite.svg#quotes-right');
+//   fill: #000000;
+//   display: block;
+//   width: 54px;
+//   height: 40px;
+//   // background-color: teal;
+//   position: absolute;
+// }
 // .customer-text::after {
 //   content: url('../images/three-dots-pink.png');
 //   display: block;
@@ -58,11 +105,4 @@
   /* or 26px */
   display: block;
   color: #000000;
-  &::before {
-    display: block;
-    content: url('../images/three-dots-pink.png');
-    width: 32px;
-    height: 4px;
-    margin: 47px auto 15px auto;
-  }
 }
