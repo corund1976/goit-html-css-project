@@ -1,0 +1,46 @@
+.customer-rev {
+  padding: 40px 0;
+}
+.customer-rev-list {
+  display: flex;
+}
+.customer-rev-item {
+  text-align: center;
+}
+.customer-image {
+  margin: 0 auto;
+}
+.customer-wrap {
+  position: relative;
+}
+.customer-text {
+  color: #000000;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  /* or 31px */
+
+  // position: relative;
+}
+.customer-text::before {
+  content: url('../images/icons.svg#github');
+  fill: #000000;
+  display: block;
+  width: 54px;
+  height: 40px;
+  // background-color: teal;
+  // position: absolute;
+}
+.customer-text::after {
+  content: url();
+}
+.customer-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  /* or 26px */
+
+  color: #000000;
+}
