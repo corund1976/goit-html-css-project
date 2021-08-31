@@ -1,5 +1,5 @@
 .header{
-    background: #FFB8CA;  // Предворительно
+    padding-bottom: 74px;
 }
 
 .header__item-list-nav-link{
@@ -17,34 +17,174 @@
     color: #D41443;
 }
 
-
+.header__cont{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
 
 .header__list-nav-link{
     display: flex;
     flex-direction: row;
 }
 
-.button-color-white{
+.button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 21px;
+    padding-right: 21px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    line-height: 0;
+    display: block;
+}
+
+.button-color-white-header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.text-btn-white-header{
+    font-weight: bold;
+    font-size: 16px;
+    color: #D41443;
 
 }
 
 .hero{
     background: #FFB8CA;
+    padding-bottom: 45px;
+    padding-top: 37px;
+
+}
+
+.button-color-white{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #D41443;
+}
+
+.button-color-pink{
+    background-color: #D41443;
+    color: #FFFFFF;
+}
+
+.button-color-pink--mr{
+    margin-right: 15px;
+}
+
+.hero__secondary-title{
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Titan One;
+    max-width: 277px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    
+}
+
+.hero__list-btn{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 112px;
+}
+
+.title{
+    font-size: 58px;
+    line-height: 90.5%;
+    color: #D41443;
 }
 
 .hero__lorem-text{
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    max-width: 180px;
+    margin-bottom: 20px;
+    
+}
+
+
+.arrow-button{
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.hero__some-cont-lorem{
+    align-items: flex-end;
+}
+
+.hero__list-points-sale{
+
+}
+
+.hero__cont-flex-title-sale{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero__item-numbers{
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 1.15;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+}
+
+.hero__item{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.hero__items-cafes-food-trucks{
+    margin-bottom: 15px;
+    position: relative;
 
 }
 
 .hero__item-numbers{
-
+    margin-bottom: 2px;
+    z-index: 1;
+    position: relative;
 }
 
-.hero__item{
+.hero__items-cafes-food-trucks::after{
+    content: '';
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    top: -6px;
+    right: -14px;
+    
 
 }
-
-
 
 // MOBILE
 @media (min-width: 480px){
