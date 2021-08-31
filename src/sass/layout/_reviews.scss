@@ -79,6 +79,19 @@
     /* or 30px */
     // letter-spacing: 0.04em;
   }
+  // position: relative;
+}
+.customer-text::before {
+  content: url('../images/sprite.svg#github');
+  fill: #000000;
+  display: block;
+  width: 54px;
+  height: 40px;
+  // background-color: teal;
+  // position: absolute;
+}
+.customer-text::after {
+  content: url();
 }
 // .customer-text::before {
 //   content: url('../images/sprite.svg#quotes-right');
