@@ -6,7 +6,7 @@
 .header__item-list-nav-link:focus,
 .header__item-list-nav-link:hover{
     color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-timing) var(--transition-function);
 }
 
 .header__item-list-nav-link--color-pink{
@@ -30,13 +30,12 @@
 }
 
 
-
-
-
-.close-btn-icon-{
-    width: 4px;
-    height: 8px;
-    fill: var(--btn-color__base);
+.right-btn-icon-short{
+    width: 10px;
+    height: 9px;
+    margin-left: 12px;
+    fill: var(--accent-color);
+    
 }
 
 
@@ -74,7 +73,14 @@
     border-radius: 100%;
     border: none;
     cursor: pointer;
-    display: block;
+    display: flex;
+    background-color: var(--bg-color-base);
+}
+
+.arrow-button:hover,
+.arrow-button:focus{
+    background-color: var(--btn-color__alt-hover);
+    transition: background-color var(--transition-timing) var(--transition-function);
 }
 
 .hero__some-cont-lorem{
@@ -133,6 +139,15 @@
     padding-right: 37px;
     border-radius: 100px;
     font-weight: bold;
+    background-color: var(--bg-color-base);
+    display: flex;
+    align-items: center;
+}
+
+.button-color-white-header:hover,
+.button-color-white-header:focus{
+    background-color: var(--btn-color__alt-hover);
+    transition: background-color var(--transition-timing) var(--transition-function);
 }
 
 
@@ -208,6 +223,9 @@
 }
 
 .hero__cont-flex::before{
+    @media screen and (max-width: 402px){
+    display: none;
+    }
     content: '';
     width: 346px;
     height: 419px;
@@ -241,6 +259,7 @@
 }
 
 @media screen and (max-width: 402px){
+
 // img
 
 // ice
@@ -264,6 +283,7 @@
     z-index: 1;
 }
 // img end
+
 }
 
 
@@ -307,6 +327,14 @@
 .arrow-button{
     width: 18px;
     height: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.arrow-button-icon{
+    width: 6px;
+    height: 6px;
+    fill: var(--accent-color);
 }
 
 .hero__item-numbers{
@@ -391,7 +419,7 @@
     background-image: url(../images/tablet/hero-ice-cream-tablet.png);
     background-size: cover;
     position: absolute;
-    right: 98px;
+    right: 112px;
     bottom: -34px;
 }
 
@@ -429,6 +457,16 @@
 
 // img end
 
+.burger-btn{
+    position: absolute;
+    top: 14px;
+    right: 203px;
+    z-index: 1;
+}
+
+.header__cont{
+    position: relative;
+}
 
 }
 
@@ -486,9 +524,7 @@
     font-size: 58px;
 }
 
-.hero__list-btn{
 
-}
 
 .hero__lorem-text{
     font-size: 14px;
@@ -504,6 +540,14 @@
 .arrow-button{
     width: 26px;
     height: 26px;
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+.arrow-button-icon{
+    width: 8px;
+    height: 8px;
+    fill: var(--accent-color);
 }
 
 .hero__item-numbers{
