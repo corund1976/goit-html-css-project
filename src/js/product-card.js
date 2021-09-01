@@ -21,10 +21,10 @@
 //     document.querySelector('.products-card-inner').classList.remove('isShown');
 // });
 
-$('.move').click(function () {
+$('.roll').click(function () {
     $(this).closest('.products-card-inner').addClass('isShown')
 })
 
-$('.isClosed').click(function () {
+$('.rollBack').click(function () {
     $(this).closest('.products-card-inner').removeClass('isShown')
 })

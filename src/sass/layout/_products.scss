@@ -268,13 +268,13 @@
     margin: 0 auto;
     border: none;
 
-    &:hover,
-    &:focus {
-        background-color: purple;
-    }
+    // &:hover,
+    // &:focus {
+    //     background-color: purple;
+    // }
 }
 
-.products-card-button.isClosed {
+.products-card-button.rollBack {
     margin-top: auto;
     // margin-bottom: 40px;
 }
