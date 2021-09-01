@@ -803,6 +803,7 @@ body {
 .customer-text::before {
   content: '';
   display: block;
+  z-index: 0;
   background-image: url("../images/quotes-right.png");
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -812,6 +813,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 50;
   -webkit-transform: translate(-5%, -50%);
           transform: translate(-5%, -50%);
 }
@@ -823,7 +825,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .customer-text::before {
     -webkit-transform: translate(60%, -50%);
             transform: translate(60%, -50%);
@@ -871,5 +873,48 @@ body {
   width: 32px;
   height: 4px;
   margin: 47px auto 18px auto;
+}
+
+.slider-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35px;
+}
+
+.slider-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.slider-dots button {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+.slider-dots button::before {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+}
+
+.slider-dots li.slick-active button::before {
+  content: '';
+  display: block;
+  border-radius: 0;
+  background-image: url("../images/home-slider.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
