@@ -12,8 +12,33 @@
 //   fill: var(--accent-color);
 // }
 .burger-icon {
-  // width: 40px;
-  // height: 40px;
+  width: 20px;
+  height: 12px;
+  fill: var(--accent-color);
+}
+
+// Кнопка Buy Now
+.buy-now-btn {
+  font-weight: 500;
+  line-height: 1.31;
+
+  width: 208px;
+  height: 44px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  margin-bottom: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-btn-icon {
+  width: 8px;
+  height: 10px;
+  margin-left: 27px;
   fill: var(--accent-color);
 }
 
@@ -62,7 +87,7 @@
 }
 
 // Кнопка закрытия мобильного меню
-.mobile-close-btn {
+.mobile-menu-close-btn {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -70,11 +95,14 @@
   top: 23px;
   right: 28px;
 }
-.mobile-close-btn:hover .close-btn-icon,
-.mobile-close-btn:focus .close-btn-icon {
+.mobile-menu-close-btn:hover .close-btn-icon,
+.mobile-menu-close-btn:focus .close-btn-icon {
   fill: var(--accent-color);
 }
 .close-btn-icon {
+  width: 8px;
+  height: 10px;
+  fill: #ffffff;
   transition: fill var(--transition-timing) var(--transition-function);
 }
 
@@ -97,6 +125,7 @@
     color: var(--accent-color);
   }
 }
+
 .mobile-menu__link-current {
   color: var(--accent-color);
 }
