@@ -1,6 +1,12 @@
 <section class="hero">
     <header class="header">
-        <div class="container header__cont"> 
+        <div class="container header__cont">
+            <!-- Кнопка вызова Мобильное меню -->
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-icon">
+                    <use href="./images/sprite.svg#burger"></use>
+                </svg>
+            </button>
             <a href="/" class="logo">
                 <picture>
                     <source srcset="../src/images/logo.png 1x, ../src/images/logo-2x.png 2x" type="image/png">
@@ -18,7 +24,7 @@
             </nav>
             <!-- <button type="button" class="button btn--second button-color-white-header"><span class="text-btn-white-header">Buy now</span></button> -->
             <button class=" button-color-white-header button">Buy now
-                <svg class="close-btn-icon" width="40" height="40">
+                <svg class="close-btn-icon-" width="40" height="40">
                     <use href="./images/sprite.svg#buy-mow"></use>
                 </svg>
             </button>
@@ -31,8 +37,8 @@
             <div class="hero__title-and-btn">
                 <h1 class="hero__secondary-title">ice cream made with <span class="title">passion</span></h1>
                 <ul class="hero__list-btn list">
-                    <li><button type="button" class="button btn--first btn--first--mr">Products</button></li>
-                    <li><button type="button" class="button btn--second">How it’s made?</button></li>
+                    <li><button type="button" class="button btn--first btn--first-hero btn--first--mr">Products</button></li>
+                    <li><button type="button" class="button btn--second btn--second-hero">How it’s made?</button></li>
                 </ul>
             </div>
 
@@ -50,17 +56,14 @@
 
         <div class="hero__some-cont-lorem">
             <p class="hero__lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <button type="button" class="arrow-button"></button>
+            <button type="button" class="arrow-button">
+                <svg width='8px' height='8px'>
+                    <use href="../src/images/sprite.svg#right-arrow"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </section>
-
-<!-- Кнопка вызова Мобильное меню -->
-<button class="burger-btn" data-menu-open>
-    <svg class="burger-icon">
-        <use href="./images/sprite.svg#burger"></use>
-    </svg>
-</button>
 
 <!-- Мобильное меню -->
 <div class="mobile-menu" data-menu>

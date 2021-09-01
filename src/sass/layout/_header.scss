@@ -33,7 +33,7 @@
 
 
 
-.close-btn-icon{
+.close-btn-icon-{
     width: 4px;
     height: 8px;
     fill: var(--btn-color__base);
@@ -137,7 +137,7 @@
 
 
 // MOBILE
-@media (max-width: 767px){
+@media screen and (max-width: 767px){
 
 .header__nav{
     display: none;
@@ -180,7 +180,7 @@
 }
 
 
-.btn--first{
+.btn--first-hero{
     font-size: 8px;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
@@ -188,7 +188,7 @@
     padding-right: 14.5px;
 }
 
-.btn--second{
+.btn--second-hero{
     font-size: 8px;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
@@ -224,13 +224,53 @@
 
 // img end
 
+// modal 
 
+// .burger-btn{
+//     position: absolute;
+//     top: 25px;
+//     right: 20px;
+// }
+
+.hero{
+    position: relative;
+}
+
+// modal end
 
 }
 
+@media screen and (max-width: 402px){
+// img
+
+// ice
+.hero{
+    position: relative;
+}
+
+.hero::before{
+    content: '';
+    width: 284px;
+    height: 419px;
+    background-image: url(../images/mobile/hero-ice-cream-mobile-320.png);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    // bottom: -160px;
+}
+
+.hero__title-and-btn{
+    z-index: 1;
+}
+// img end
+}
+
+
+
 
 // TABLET
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
 
 .header__nav{
     display: none;
@@ -317,7 +357,7 @@
 }
 
 
-.btn--first{
+.btn--first-hero{
     font-size: 8px;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
@@ -325,7 +365,7 @@
     padding-right: 14.5px;
 }
 
-.btn--second{
+.btn--second-hero{
     font-size: 8px;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
@@ -394,7 +434,7 @@
 
 
 // DESKTOP
-@media (min-width: 1280px){
+@media screen and (min-width: 1280px){
 
 .header{
     padding-bottom: 74px;
@@ -505,7 +545,7 @@
 
 
 
-.btn--first{
+.btn--first-hero{
     font-size: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -513,7 +553,7 @@
     padding-right: 22px;
 }
 
-.btn--second{
+.btn--second-hero{
     font-size: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -582,5 +622,6 @@
 }
 
 // img end
+
 
 }
