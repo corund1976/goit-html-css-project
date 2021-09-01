@@ -1,10 +1,10 @@
 // background
 .contact {
-  background-image: linear-gradient(to top, #fff5f6 96.7%, white 3.3%);
+  background-image: linear-gradient(to top, var(--bg-color-alt) 96.7%, white 3.3%);
 }
 @media screen and (min-width: 768px) {
   .contact {
-    background-image: linear-gradient(to top, #fff5f6 90.5%, white 9.5%);
+    background-image: linear-gradient(to top, var(--bg-color-alt) 90.5%, white 9.5%);
   }
 }
 .visually-hidden {
@@ -45,7 +45,7 @@
     margin-right: 20px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-item {
     max-width: 330px;
     padding: 51px 43px;
@@ -89,7 +89,7 @@
   letter-spacing: 0.04em;
   max-width: 130px;
   height: 16px;
-  color: #ffffff;
+  color: var(--btn-color__alt);
 }
 @media screen and (min-width: 768px) {
   .contact-item__subtitle-main {
@@ -107,6 +107,7 @@
   border-bottom: 1px solid #e1e1e1;
 }
 .contact-info__subtitle {
+  color: #000000;
   font-weight: 500;
   font-size: 12px;
   line-height: 22px;
@@ -118,7 +119,7 @@
     line-height: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__subtitle {
     font-size: 16px;
     line-height: 26px;
@@ -129,7 +130,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: var(--txt-color-base);
 }
 @media screen and (min-width: 768px) {
   .contact-info__text {
@@ -137,7 +138,7 @@
     line-height: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__text {
     font-size: 16px;
     line-height: 30px;
@@ -155,7 +156,7 @@
     line-height: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__time {
     font-size: 16px;
     line-height: 30px;
@@ -170,7 +171,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: var(--txt-color-base);
 }
 @media screen and (min-width: 767px) {
   .contact-info__address-link {
@@ -178,7 +179,7 @@
     line-height: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__address-link {
     font-size: 16px;
     line-height: 30px;
@@ -208,7 +209,6 @@
   }
 }
 .button-top {
-  background: #d41342;
   border-radius: 22px;
   font-style: normal;
   font-weight: bold;
@@ -218,13 +218,11 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  width: 161.45px;
-  height: 44px;
   margin-left: auto;
   margin-right: auto;
+
+  width: 161.45px;
+  height: 44px;
 }
 @media screen and (min-width: 767px) {
   .button-top {
@@ -238,8 +236,6 @@
   }
 }
 .button-bot {
-  background: #ffffff;
-  color: #d41443;
   border-radius: 22px;
   font-style: normal;
   font-weight: bold;
@@ -249,12 +245,11 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  border: none;
-  cursor: pointer;
-  width: 161.45px;
-  height: 44px;
   margin-left: auto;
   margin-right: auto;
+
+  width: 161.45px;
+  height: 44px;
 }
 @media screen and (min-width: 767px) {
   .button-bot {
