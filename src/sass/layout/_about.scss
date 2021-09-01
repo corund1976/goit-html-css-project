@@ -212,7 +212,7 @@
         width: 8px;
         height: 99.8%;
         margin-left: 14px;
-        fill: --btn-color__base;
+        fill: var(--btn-color__base);
     }
     @media screen and (min-width: 768px) {
         font-size: 16px;
