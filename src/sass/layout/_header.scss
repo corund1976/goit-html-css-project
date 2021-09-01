@@ -2,28 +2,17 @@
 
 .header__item-list-nav-link{
     font-weight: bold;
-    color: #fff;
+    color: var(--bg-color-base);
 }
 
 .header__item-list-nav-link--color-pink{
     color: var(--btn-color__base);
 }
 
-.hero{
-    background: #FFB8CA;
-}
-
-.button{
-    line-height: 0;
-    display: flex;
-    font-weight: normal;
-
-}
 
 .text-btn-white-header{
     font-weight: bold;
     font-size: 16px;
-
 }
 
 .hero{
@@ -36,17 +25,9 @@
     padding-right: 14.5px;
 }
 
-.btn--second{
-    font-size: 8px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 37px;
-    padding-right: 37px;
-}
 
-.btn--first{
-    font-size: 8px;
-}
+
+
 
 .close-btn-icon{
     width: 4px;
@@ -54,9 +35,7 @@
     fill: var(--btn-color__base);
 }
 
-.button-color-pink--mr{
-    margin-right: 8px;
-}
+
 
 .hero__secondary-title{
     font-weight: normal;
@@ -68,7 +47,7 @@
 
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF; 
+    color: var(--bg-color-base); 
     font-weight: normal;
     font-family: Titan One;
 }
@@ -79,11 +58,11 @@
 }
 
 .title{
-    color: #D41443;
+    color: var(--btn-color__base);
 }
 
 .hero__lorem-text{
-    color: #FFFFFF;
+    color: var(--bg-color-base);
     max-width: 200px;
     margin-bottom: 20px;
     font-weight: normal;
@@ -112,14 +91,14 @@
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: var(--btn-color__base);
     z-index: 1;
     position: relative;
 }
 
 .hero__item{
     text-align: right;
-    color: #FFFFFF;
+    color: var(--bg-color-base);
 }
 
 .hero__items-cafes-food-trucks{
@@ -129,7 +108,7 @@
 
 .hero__items-cafes-food-trucks::after{
     content: '';
-    background-color: #FFFFFF;
+    background-color: var(--bg-color-base);
     position: absolute;
 }
 
@@ -141,6 +120,17 @@
 .header__cont{
     display: flex;
     align-items: baseline;
+}
+
+.button-color-white-header{
+    color: var(--btn-color__base);
+    font-size: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 100px;
+    font-weight: bold;
 }
 
 
@@ -180,17 +170,33 @@
 .hero{
     padding-top: 6px;
     padding-left: 20px;
+    padding-bottom: 160px;
 }
 
 .header__cont{
     margin-bottom: 137px;
 }
 
-.hero{
-    padding-bottom: 160px;
+
+.btn--first{
+    font-size: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
 }
 
+.btn--second{
+    font-size: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+}
 
+.btn--first--mr{
+    margin-right: 8px;
+}
 
 }
 
@@ -202,9 +208,7 @@
     display: none;
 }
 
-.btn--second{
-    
-}
+
 
 .hero__secondary-title{
     font-size: 22px;
@@ -283,6 +287,27 @@
 }
 
 
+.btn--first{
+    font-size: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+}
+
+.btn--second{
+    font-size: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+}
+
+.btn--first--mr{
+    margin-right: 8px;
+}
+
+
 }
 
 
@@ -318,19 +343,6 @@
     flex-direction: row;
 }
 
-.button{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 21px;
-    padding-right: 21px;
-}
-
-.btn--second{
-    line-height: 0;
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-}
 
 .hero{
     padding-bottom: 45px;
@@ -339,13 +351,6 @@
 
 
 
-.btn--first{
-    font-size: 14px;
-}
-
-.btn--first--mr{
-    margin-right: 15px;
-}
 
 .hero__secondary-title{
     font-size: 38px;
@@ -416,10 +421,41 @@
     margin-left: 180px;
 }
 
-// .hero{
-//     background-image: ulr(../src/images/desktop/hero-ice-cream-desktop.png);
-// }
 
 
+.btn--first{
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.btn--second{
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20.5px;
+    padding-right: 20.5px;
+}
+
+.btn--first--mr{
+    margin-right: 15px;
+}
+
+.hero__cont-flex{
+    position: relative;
+}
+
+.hero__cont-flex::before{
+    content: '';
+    width: 236px;
+    height: 557px;
+    background-image: url(../images/desktop/hero-ice-cream-desktop.png);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 }
