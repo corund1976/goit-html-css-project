@@ -21,19 +21,6 @@ $secondary-title-color: #FFA5BA;
     text-transform: uppercase;
     color: #D41443;
 }
-.btn--white {
-    color: #D41443 ;
-    background-color: #FFFFFF ;
-    cursor: pointer;
-    transition: 250ms background-color cubic-bezier(0.4,0,0.2,1);
-    &:hover{
-        background: #ECEBEB ;
-    }
-    &:focus{
-        background: #ECEBEB ;
-        outline: none;
-    }
-}
 .products {
     .btn {
         transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,7 +29,7 @@ $secondary-title-color: #FFA5BA;
         }
         &:focus {
         box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) ;
-        outline-color: --btn-color__base;
+        outline-color: var(--btn-color__base);
         }
     }
 }
@@ -50,11 +37,11 @@ $secondary-title-color: #FFA5BA;
 .about {
     width: 100%;
     position: relative;
-    background: --bg-color-alt;
+    background: var(--bg-color-alt);
     padding-top: 125px;
     padding-bottom: 39px;
     &__container {
-        background-color: --bg-color-alt;
+        background-color: var(--bg-color-alt);
         width: 100%;
     }
     &__text {
@@ -114,7 +101,7 @@ $secondary-title-color: #FFA5BA;
     }
 }
 .cow {
-    background-color: --bg-color-alt;
+    background-color: var(--bg-color-alt);
     display: flex;
     flex-direction: column;
     align-items: center;

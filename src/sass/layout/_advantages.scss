@@ -1,11 +1,11 @@
 .advantages {
-        background-color: --bg-color-alt;
+        background-color: var(--bg-color-alt);
         padding-bottom: 145px;
         &__search {
         display: none;
         }
         &__container {
-        background-color: --bg-color-alt;
+        background-color: var(--bg-color-alt);
         }
         &__list {
         display: flex;
