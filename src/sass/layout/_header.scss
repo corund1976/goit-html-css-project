@@ -6,7 +6,7 @@
 }
 
 .header__item-list-nav-link--color-pink{
-    color: #D41443;
+    color: var(--btn-color__base);
 }
 
 .hero{
@@ -14,7 +14,7 @@
 }
 
 .button{
-    // line-height: 0;
+    line-height: 0;
     display: flex;
     font-weight: normal;
 
@@ -46,6 +46,12 @@
 
 .btn--first{
     font-size: 8px;
+}
+
+.close-btn-icon{
+    width: 4px;
+    height: 8px;
+    fill: var(--btn-color__base);
 }
 
 .button-color-pink--mr{
@@ -323,6 +329,7 @@
     line-height: 0;
     display: block;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .hero{
