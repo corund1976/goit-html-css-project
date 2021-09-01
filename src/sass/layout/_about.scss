@@ -21,18 +21,18 @@ $secondary-title-color: #FFA5BA;
     text-transform: uppercase;
     color: #D41443;
 }
-.products {
-    .btn {
-        transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover {
-        box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) ;
-        }
-        &:focus {
-        box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) ;
-        outline-color: var(--btn-color__base);
-        }
-    }
-}
+// .products {
+//     .btn {
+//         transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+//         &:hover {
+//         box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) ;
+//         }
+//         &:focus {
+//         box-shadow: 0px 0px 10px 1px rgba(34, 60, 80, 0.36) ;
+//         outline-color: var(--btn-color__base);
+//         }
+//     }
+// }
 
 .about {
     width: 100%;
