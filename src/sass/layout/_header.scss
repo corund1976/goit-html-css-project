@@ -67,8 +67,6 @@
 
 .hero__lorem-text{
     color: var(--bg-color-base);
-    max-width: 200px;
-    margin-bottom: 20px;
     font-weight: normal;
 }
 
@@ -202,6 +200,30 @@
     margin-right: 8px;
 }
 
+// img
+
+
+// ice
+.hero__cont-flex{
+    position: relative;
+}
+
+.hero__cont-flex::before{
+    content: '';
+    max-width: 346px;
+    height: 419px;
+    background-image: url(../images/mobile/hero-ice-cream-mobile.png);
+    background-size: cover;
+    position: absolute;
+    right: 83px;
+    bottom: -140px;
+}
+
+
+// img end
+
+
+
 }
 
 
@@ -228,10 +250,12 @@
 
 
 .hero__lorem-text{
+    font-style: normal;
+    font-weight: normal;
     font-size: 8px;
     line-height: 150%;
-    max-width: 114px;
     margin-bottom: 7px;
+    width: 130px;
 }
 
 .hero__title-and-btn{
@@ -311,6 +335,58 @@
     margin-right: 8px;
 }
 
+// img
+
+// ics
+.hero__cont-flex{
+    position: relative;
+}
+
+.hero__cont-flex::before{
+    content: '';
+    width: 324px;
+    height: 368px;
+    background-image: url(../images/tablet/hero-ice-cream-tablet.png);
+    background-size: cover;
+    position: absolute;
+    right: 98px;
+    bottom: -34px;
+}
+
+// girl
+.hero__cont-flex-title-sale{
+    position: relative;
+}
+
+.hero__cont-flex-title-sale::before{
+    content: '';
+    width: 168px;
+    height: 133px;
+    background-image: url(../images/tablet/girl-taste-tablet.png);
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: -107px;
+}
+
+// milk
+.hero__some-cont-lorem{
+    position: relative;
+}
+
+.hero__some-cont-lorem::before{
+    content: '';
+    width: 124px;
+    height: 126px;
+    background-image: url(../images/tablet/milk-bottle-tablet.png);
+    background-size: cover;
+    position: absolute;
+    left: -120px;
+    bottom: -6px;
+}
+
+// img end
+
 
 }
 
@@ -375,7 +451,7 @@
 .hero__lorem-text{
     font-size: 14px;
     line-height: 140%;
-    max-width: 200px;
+    width: 200px;
     margin-bottom: 20px;
 }
 
@@ -447,19 +523,57 @@
     margin-right: 15px;
 }
 
-// .hero__cont-flex{
-//     position: relative;
-// }
+// img
 
-// .hero__cont-flex::before{
-//     content: '';
-//     width: 236px;
-//     height: 557px;
-//     background-image: url(../images/desktop/hero-ice-cream-desktop.png);
-//     background-size: cover;
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-// }
+// ice
+.hero__cont-flex{
+    position: relative;
+}
+
+.hero__cont-flex::before{
+    content: '';
+    width: 538px;
+    height: 613px;
+    background-image: url(../images/desktop/hero-ice-cream-desktop.png);
+    background-size: cover;
+    position: absolute;
+    right: 170px;
+    bottom: -45px;
+}
+
+
+// girl
+.hero__cont-flex-title-sale{
+    position: relative;
+}
+
+.hero__cont-flex-title-sale::before{
+    content: '';
+    width: 293px;
+    height: 232px;
+    background-image: url(../images/desktop/girl-taste-desktop.png);
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: -167px;
+}
+
+// milk
+.hero__some-cont-lorem{
+    position: relative;
+}
+
+.hero__some-cont-lorem::before{
+    content: '';
+    width: 188px;
+    height: 191px;
+    background-image: url(../images/desktop/milk-bottle-desktop.png);
+    background-size: cover;
+    position: absolute;
+    left: -180px;
+    bottom: -12px;
+}
+
+// img end
 
 }
