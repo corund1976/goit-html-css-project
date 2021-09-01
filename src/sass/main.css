@@ -14,6 +14,8 @@
   --btn-color__alt-hover: #ecebeb;
   /* цвет текста */
   --txt-color-base: #907e82;
+  /* цвет акцента */
+  --accent-color: #d41443;
   /* параметры transition для hover */
   --transition-timing: 250ms;
   --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -145,14 +147,14 @@ body {
 }
 
 .contact {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(96.7%, #fff5f6), color-stop(3.3%, white));
-  background-image: linear-gradient(to top, #fff5f6 96.7%, white 3.3%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(96.7%, var(--bg-color-alt)), color-stop(3.3%, white));
+  background-image: linear-gradient(to top, var(--bg-color-alt) 96.7%, white 3.3%);
 }
 
 @media screen and (min-width: 768px) {
   .contact {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90.5%, #fff5f6), color-stop(9.5%, white));
-    background-image: linear-gradient(to top, #fff5f6 90.5%, white 9.5%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90.5%, var(--bg-color-alt)), color-stop(9.5%, white));
+    background-image: linear-gradient(to top, var(--bg-color-alt) 90.5%, white 9.5%);
   }
 }
 
@@ -201,7 +203,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-item {
     max-width: 330px;
     padding: 51px 43px;
@@ -258,7 +260,7 @@ body {
   letter-spacing: 0.04em;
   max-width: 130px;
   height: 16px;
-  color: #ffffff;
+  color: var(--btn-color__alt);
 }
 
 @media screen and (min-width: 768px) {
@@ -280,6 +282,7 @@ body {
 }
 
 .contact-info__subtitle {
+  color: #000000;
   font-weight: 500;
   font-size: 12px;
   line-height: 22px;
@@ -293,7 +296,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__subtitle {
     font-size: 16px;
     line-height: 26px;
@@ -305,7 +308,7 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: var(--txt-color-base);
 }
 
 @media screen and (min-width: 768px) {
@@ -315,7 +318,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__text {
     font-size: 16px;
     line-height: 30px;
@@ -336,7 +339,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__time {
     font-size: 16px;
     line-height: 30px;
@@ -353,7 +356,7 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: var(--txt-color-base);
 }
 
 @media screen and (min-width: 767px) {
@@ -363,7 +366,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__address-link {
     font-size: 16px;
     line-height: 30px;
@@ -400,7 +403,6 @@ body {
 }
 
 .button-top {
-  background: #d41342;
   border-radius: 22px;
   font-style: normal;
   font-weight: bold;
@@ -416,13 +418,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  width: 161.45px;
-  height: 44px;
   margin-left: auto;
   margin-right: auto;
+  width: 161.45px;
+  height: 44px;
 }
 
 @media screen and (min-width: 767px) {
@@ -439,8 +438,6 @@ body {
 }
 
 .button-bot {
-  background: #ffffff;
-  color: #d41443;
   border-radius: 22px;
   font-style: normal;
   font-weight: bold;
@@ -456,12 +453,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: none;
-  cursor: pointer;
-  width: 161.45px;
-  height: 44px;
   margin-left: auto;
   margin-right: auto;
+  width: 161.45px;
+  height: 44px;
 }
 
 @media screen and (min-width: 767px) {
@@ -654,7 +649,7 @@ body {
 }
 
 .footer-social_link:hover, .footer-social_link:focus {
-  background: #d41443;
+  background: var(--accent-color);
 }
 
 .footer-social_icon {
