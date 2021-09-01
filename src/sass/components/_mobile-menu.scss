@@ -6,11 +6,22 @@
   background-color: transparent;
   border: none;
   padding: 0;
+
+  // position: absolute;
+  // top: 25px;
+  // right: 20px;
+
+  // @media screen and (min-width: 768px) {
+  //   top: 52px;
+  //   right: 224px;
+  // }
 }
+
 // .burger-btn:hover .burger-icon,
 // .burger-btn:focus .burger-icon {
 //   fill: var(--accent-color);
 // }
+
 .burger-icon {
   width: 20px;
   height: 12px;
@@ -51,7 +62,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 100;
 
   width: 250px;
   height: 100vh;
@@ -81,7 +92,7 @@
   max-width: 480px;
   height: 100%;
 
-  padding: 60px 20px;
+  padding-top: 60px;
   margin: 0 auto;
 
   display: flex;
@@ -104,8 +115,8 @@
   fill: var(--accent-color);
 }
 .close-btn-icon {
-  width: 8px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   fill: #ffffff;
   transition: fill var(--transition-timing) var(--transition-function);
 }
