@@ -143,7 +143,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    background: #d41443;
+  }
 }
+
 .footer-social_icon {
   width: 22px;
   height: 22px;
@@ -178,13 +184,6 @@
   margin-left: auto;
 }
 .footer-contact_text {
-  //   font-family: DM Sans;
-  //   font-weight: bold;
-  //   font-size: 16px;
-  //   line-height: 186%;
-  //   /* identical to box height, or 30px */
-  //   letter-spacing: 0.02em;
-
   color: #000000;
 }
 
@@ -202,7 +201,7 @@
 
   letter-spacing: 0.02em;
 
-  color: #907e82;
+  color: var(--txt-color-base);
 
   max-width: 150px;
 
