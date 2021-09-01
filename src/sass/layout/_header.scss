@@ -9,38 +9,20 @@
     color: #D41443;
 }
 
-.text-btn-white-header{
-    font-weight: bold;
-    font-size: 16px;
-    color: #D41443;
-}
-
 .hero{
     background: #FFB8CA;
 }
 
 .button{
-    line-height: 0;
-    display: block;
-    font-weight: normal;
-}
-
-.button-color-white-header{
-    background-color: #fff;
+    // line-height: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 37px;
-    padding-right: 37px;
+    font-weight: normal;
+
 }
 
 .text-btn-white-header{
     font-weight: bold;
     font-size: 16px;
-    color: #D41443;
 
 }
 
@@ -54,18 +36,16 @@
     padding-right: 14.5px;
 }
 
-.button-color-white{
+.btn--second{
     font-size: 8px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #D41443;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 37px;
+    padding-right: 37px;
 }
 
-.button-color-pink{
+.btn--first{
     font-size: 8px;
-    background-color: #D41443;
-    color: #FFFFFF;
 }
 
 .button-color-pink--mr{
@@ -98,7 +78,7 @@
 
 .hero__lorem-text{
     color: #FFFFFF;
-    max-width: 180px;
+    max-width: 200px;
     margin-bottom: 20px;
     font-weight: normal;
 }
@@ -204,6 +184,8 @@
     padding-bottom: 160px;
 }
 
+
+
 }
 
 
@@ -214,12 +196,8 @@
     display: none;
 }
 
-.button-color-white-header{
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 37px;
-    padding-right: 37px;
-
+.btn--second{
+    
 }
 
 .hero__secondary-title{
@@ -298,6 +276,7 @@
     margin-left: 120px;
 }
 
+
 }
 
 
@@ -340,20 +319,10 @@
     padding-right: 21px;
 }
 
-.button-color-white-header{
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 37px;
-    padding-right: 37px;
-    border: none;
-    cursor: pointer;
-    border-radius: 100px;
+.btn--second{
     line-height: 0;
     display: block;
+    font-size: 14px;
 }
 
 .hero{
@@ -361,15 +330,13 @@
     padding-top: 37px;
 }
 
-.button-color-white{
+
+
+.btn--first{
     font-size: 14px;
 }
 
-.button-color-pink{
-    font-size: 14px;
-}
-
-.button-color-pink--mr{
+.btn--first--mr{
     margin-right: 15px;
 }
 
@@ -392,7 +359,7 @@
 .hero__lorem-text{
     font-size: 14px;
     line-height: 140%;
-    max-width: 180px;
+    max-width: 200px;
     margin-bottom: 20px;
 }
 
