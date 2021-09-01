@@ -209,7 +209,6 @@
   }
 }
 .button-top {
-  background: #d41342;
   border-radius: 22px;
   font-style: normal;
   font-weight: bold;
@@ -219,13 +218,11 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: var(--btn-color__alt);
-  border: none;
-  cursor: pointer;
-  width: 161.45px;
-  height: 44px;
   margin-left: auto;
   margin-right: auto;
+
+  width: 161.45px;
+  height: 44px;
 }
 @media screen and (min-width: 767px) {
   .button-top {
@@ -239,8 +236,6 @@
   }
 }
 .button-bot {
-  background: var(--bg-color-base);
-  color: var(--btn-color__base);
   border-radius: 22px;
   font-style: normal;
   font-weight: bold;
@@ -250,12 +245,11 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  border: none;
-  cursor: pointer;
-  width: 161.45px;
-  height: 44px;
   margin-left: auto;
   margin-right: auto;
+
+  width: 161.45px;
+  height: 44px;
 }
 @media screen and (min-width: 767px) {
   .button-bot {
