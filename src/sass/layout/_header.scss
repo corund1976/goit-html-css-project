@@ -202,7 +202,6 @@
 
 // img
 
-
 // ice
 .hero__cont-flex{
     position: relative;
@@ -210,15 +209,18 @@
 
 .hero__cont-flex::before{
     content: '';
-    max-width: 346px;
+    width: 346px;
     height: 419px;
     background-image: url(../images/mobile/hero-ice-cream-mobile.png);
     background-size: cover;
     position: absolute;
-    right: 83px;
-    bottom: -140px;
+    left: 36px;
+    bottom: -160px;
 }
 
+.hero__title-and-btn{
+    z-index: 1;
+}
 
 // img end
 
@@ -572,6 +574,11 @@
     position: absolute;
     left: -180px;
     bottom: -12px;
+}
+
+.header{
+    position: relative;
+    z-index: 1;
 }
 
 // img end
