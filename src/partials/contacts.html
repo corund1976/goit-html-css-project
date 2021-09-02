@@ -106,13 +106,54 @@
     </ul>
     <ul class="buttons">
     <li class="buttons-list">
-        <button type="button" class="button btn--first button-top">Our Locations<svg width="7px" height="16px" class="svg-top"><use href="./images/vector.svg#icon-vector-1"></use></svg></button>
+        <button type="button" class="button btn--first button-top" data-modal-open-cont>Our Locations<svg width="7px" height="16px" class="svg-top"><use href="./images/vector.svg#icon-vector-1"></use></svg></button>
     </li>
     <li class="buttons-list">
-        <button type="button" class="button btn--second button-bot">Franchise<svg width="7px" height="16px" class="svg-top">
+        <button type="button" class="button btn--second button-bot" data-modal-open-cont>Franchise<svg width="7px" height="16px" class="svg-top">
             <use href="./images/vector-left.svg#icon-Vector-1-1"></use>
-        </svg></button>
+        </svg>
+    </button>
     </li>
     </ul>
 </div>
 </section>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modalka">
+        <button type="button" class="button close-buttn" data-modal-close-cont>
+            <svg>
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <b class="modal-title">Apply to the highest quality ice cream</b>
+        <form class="modal-form">
+
+
+            <label for="input-name" class="modal-form__text"> Имя
+                <span class="modal-form__input-wrapper">
+                    <input type="text" id="input-name" name="user-name" class="modal-form__input" minlength="2">
+
+                </span>
+            </label>
+            <label for="input-phone" class="modal-form__text"> Phone
+                <span class="modal-form__input-wrapper">
+                    <input type="text" id="input-phone" name="user-form" class="modal-form__input" title="096-111-11-11"
+                        required>
+
+                </span>
+            </label>
+
+            <label for="input-email" class="modal-form__text">Email
+                <span class="modal-form__input-wrapper">
+
+                </span>
+            </label>
+            <label class="modal-form__text"> Comment
+                <textarea name="user-comment" class="modal-form__comment" placeholder="Type your text"></textarea>
+
+
+            </label>
+
+
+        </form>
+    </div>
+</div>
