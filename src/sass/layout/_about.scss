@@ -17,7 +17,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(  --accent-color);
+    color: var(--accent-color);
 }
 
 .about {
@@ -238,5 +238,72 @@
         background-size: cover;
         position: absolute;
         bottom: -30px;
+    }
+}
+
+.backgrop {
+    // opacity: 0;
+    // pointer-events: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.25);
+}
+
+.about-modal .primary-title {
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-modal .cow__text{
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.about-modal {
+    background-color: #FFFFFF;
+    
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: stretch;
+    }
+}  
+        
+.btn-modal {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 176px;
+    height: 44px;
+    font-family: DM Sans, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    &__icon {
+        width: 8px;
+        height: 99.8%;
+        margin-left: 14px;
+        fill: var(--btn-color__base);
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.31;
     }
 }
