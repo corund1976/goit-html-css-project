@@ -1,46 +1,107 @@
-<!-- Кнопка вызова Мобильное меню -->
-<button class="burger-btn" data-menu-open>
-    <svg class="burger-icon">
-        <use href="./images/sprite.svg#burger"></use>
-    </svg>
-</button>
+<section class="hero">
+    <header class="header">
+        <div class="container header__cont">
+            <!-- Кнопка вызова Мобильное меню -->
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-icon">
+                    <use href="./images/sprite.svg#burger"></use>
+                </svg>
+            </button>
+            <a href="/" class="logo">
+                <picture>
+                    <source srcset="../src/images/logo.png 1x, ../src/images/logo-2x.png 2x" type="image/png">
+                    <img src="#" alt="logo">
+                </picture>
+            </a>
+            <nav  class="header__nav">
+                <ul class="list header__list-nav-link">
+                    <li class="header__list-nav-link--mr"><a class="link header__item-list-nav-link header__item-list-nav-link--color-pink" href="">Home</a></li>
+                    <li class="header__list-nav-link--mr"><a class="link header__item-list-nav-link" class="link " href="">About us</a></li>
+                    <li class="header__list-nav-link--mr"><a class="link header__item-list-nav-link" href="">How it’s made?</a></li>
+                    <li class="header__list-nav-link--mr"><a class="link header__item-list-nav-link" href="">Our products</a></li>
+                    <li class="header__list-nav-link--mr"><a class="link header__item-list-nav-link" href="">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <button type="button" class="button btn--second button-color-white-header"><span class="text-btn-white-header">Buy now</span></button> -->
+            <button class=" button-color-white-header button">Buy now
+                <svg class="right-btn-icon-short">
+                    <use href="./images/sprite.svg#right"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
 
-<!-- Мобильное меню -->
-<div class="mobile-menu" data-menu>
-    <div class="mobile-menu__container">
+    <div class="container hero__cont-flex">
+        <div class="hero__cont-flex-title-sale">
+            
+            <div class="hero__title-and-btn">
+                <h1 class="hero__secondary-title">ice cream made with <span class="title">passion</span></h1>
+                <ul class="hero__list-btn list">
+                    <li><button type="button" class="button btn--first btn--first-hero btn--first--mr">Products</button></li>
+                    <li><button type="button" class="button btn--second btn--second-hero">How it’s made?</button></li>
+                </ul>
+            </div>
 
-        <!-- Кнопка Закрытие мобильное меню -->
-        <button class="mobile-menu-close-btn" data-menu-close>
-            <svg class="close-btn-icon">
-                <use href="./images/sprite.svg#close"></use>
-            </svg>
-        </button>
+            <ul class="list hero__list-points-sale">
+                <li class="hero__items-cafes-food-trucks">
+                    <p class="hero__item-numbers">16</p>
+                    <p class="hero__item">cafes</p>
+                </li>
+                <li class="hero__items-cafes-food-trucks">
+                    <p class="hero__item-numbers">23</p>
+                    <p class="hero__item">food trucks</p>
+                </li>
+            </ul>
+        </div>
 
-        <!-- Кнопка Buy now -->
-        <button class="buy-now-btn btn--second button">
-            Buy now
-            <svg class="right-btn-icon">
-                <use href="./images/sprite.svg#right"></use>
-            </svg>
-        </button>
+        <div class="hero__some-cont-lorem">
+            <p class="hero__lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button type="button" class="arrow-button">
+                <svg class="arrow-button-icon">
+                    <use href="../src/images/sprite.svg#right-arrow"></use>
+                </svg>
+            </button>
+        </div>
 
-        <!-- Навигация моб.меню -->
-        <ul class="mobile-menu__nav list">
-            <li class="mobile-menu__item">
-                <a href="#" class="mobile-menu__link-current link">Home</a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#" class="mobile-menu__link link">About us</a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#" class="mobile-menu__link link">How it’s made?</a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#" class="mobile-menu__link link">Our products</a>
-            </li>
-            <li class="mobile-menu__item">
-                <a href="#" class="mobile-menu__link link">Contact</a>
-            </li>
-        </ul>
+                <!-- Мобильное меню -->
+            <div class="mobile-menu" data-menu>
+                <div class="mobile-menu__container">
+
+                    <!-- Кнопка Закрытие мобильное меню -->
+                    <button class="mobile-menu-close-btn" data-menu-close>
+                        <svg class="close-btn-icon">
+                            <use href="./images/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+
+                    <!-- Кнопка Buy now -->
+                    <button class="buy-now-btn btn--second button">
+                        Buy now
+                        <svg class="right-btn-icon">
+                            <use href="./images/sprite.svg#right"></use>
+                        </svg>
+                    </button>
+
+                    <!-- Навигация моб.меню -->
+                    <ul class="mobile-menu__nav list">
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link-current link">Home</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link link">About us</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link link">How it’s made?</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link link">Our products</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </div>
-</div>
+</section>
+
