@@ -4,7 +4,16 @@
 }
 @media screen and (min-width: 768px) {
   .contact {
-    background-image: linear-gradient(to top, var(--bg-color-alt) 90.5%, white 9.5%);
+    background-image: linear-gradient(to top, var(--bg-color-alt) 91%, white 9%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact {
+    background-image: url(../images/desktop/contacts-bg_image-desktop-2x.png),
+      linear-gradient(to top, var(--bg-color-alt) 90.5%, white 9.5%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 80px;
   }
 }
 .visually-hidden {
