@@ -11,10 +11,10 @@
   top: 25px;
   right: 20px;
 
-  @media screen and (min-width: 768px) {
-    top: 52px;
-    right: 224px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   top: 52px;
+  //   right: 224px;
+  // }
 }
 
 // .burger-btn:hover .burger-icon,
@@ -63,7 +63,10 @@
   top: 0;
   right: 0;
   z-index: 100;
-
+  
+  @media screen and (min-width: 768px){
+  width: 38vw;  
+  }
   width: 250px;
   height: 100vh;
 
@@ -81,8 +84,10 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
   }
 }
+
 
 .mobile-menu__container {
   position: relative;
