@@ -282,22 +282,15 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal {
+  background-color: var(--bg-color-alt);
+  display: flex;
   position: relative;
   padding: 40px;
   border-radius: 4px;
-  background-color: #ffffff;
   width: 90%;
   height: 90%;
 }
 
-@media screen and (min-width: 1280px) {
-  .modal {
-    // width: 528px;
-    // height: 581px;
-    padding: 40px;
-    border-radius: 4px;
-  }
-}
 .close-buttn {
   position: absolute;
   top: 10px;
@@ -480,4 +473,9 @@
   visibility: hidden;
 
   pointer-events: none;
+}
+.map {
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
 }
