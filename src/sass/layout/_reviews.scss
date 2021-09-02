@@ -53,7 +53,7 @@
   );
 
   @media screen and (min-width: 768px) {
-    max-width: 460px;
+    // max-width: 460px;
     font-size: 14px;
     line-height: 2.16;
     /* or 30px */
@@ -99,7 +99,7 @@
   z-index: 50;
   transform: translate(-5%, -50%);
   @media screen and (min-width: 768px) {
-    transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
   }
   @media screen and (min-width: 1280px) {
     transform: translate(60%, -50%);
