@@ -132,6 +132,8 @@
   border-radius: 50%;
   background: #fea5bb;
 
+  transition: background var(--transition-timing) var(--transition-function);
+
   width: 32px;
   height: 32px;
 
