@@ -270,3 +270,212 @@
   margin-top: 3.5px;
   margin-left: 9px;
 }
+// MODAL WINDOW
+
+.is-hidden {
+  opacity: 1;
+  visibility: hidden;
+  pointer-events: auto;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.modal {
+  background-color: var(--bg-color-alt);
+  display: flex;
+  position: relative;
+  padding: 40px;
+  border-radius: 4px;
+  width: 90%;
+  height: 90%;
+}
+
+.close-buttn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition-property: fill, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  display: block;
+  color: #000000;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 400px) {
+  .modal-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+.modal-form__text {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+.modal-form__input-wrapper {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+}
+.modal-form__input {
+  background-color: #ffffff;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  outline: 0;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:focus + .modal-form__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-form__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form__comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  resize: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal-form__comment {
+    height: 60px;
+  }
+}
+.modal-form__link {
+  color: var(--accent-color);
+}
+
+.modal-form__btn {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.modal-checkbox-label::before {
+  display: block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid #303030;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.modal-checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 31px;
+}
+@media screen and (max-width: 400px) {
+  .modal-checkbox-label {
+    font-size: 9px;
+  }
+}
+.modal-checkbox:checked + .modal-checkbox-label::before {
+  background-size: contain;
+  background-position: center;
+}
+.modal-form {
+  margin-top: auto;
+}
+.backdrop-contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  visibility: visible;
+
+  pointer-events: auto;
+
+  transition: opacity var(--transition-timing) var(--transition-function),
+    visibility var(--transition-timing) var(--transition-function);
+}
+
+.backdrop-contact.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+}
+.map {
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
