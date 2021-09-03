@@ -1,0 +1,46 @@
+/* Модальное окно для кнопки "Заказать услугу" */
+.modal-buy-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: 1280px) {
+    max-width: 93.75vw;
+    width: 450px;
+    height: 93.75vh;
+    max-height: 450px;
+    overflow: auto;
+  }
+  max-width: 530px;
+  max-height: 480px;
+  padding: 40px;
+  background-color: #fff5f6;
+  border-radius: 20px;
+}
+/* Кнопка Х закрытия модального окна */
+.close-btn-buy-now {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  /* круглая рамка вокруг Х */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  /* центруем Х в круглой рамке */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover .close-btn-buy-now-icon,
+  &:focus .close-btn-buy-now-icon {
+    fill: var(--accent-color);
+  }
+}
+/* Делаем плавный ховер при наведении на кнопку закрытия */
+.close-btn-buy-now-icon {
+  transition: fill var(--transition-timing) var(--transition-function);
+}
