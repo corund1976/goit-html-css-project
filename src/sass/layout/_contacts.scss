@@ -281,12 +281,13 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal {
-  background-color: var(--bg-color-alt);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--bg-color-base);
   display: flex;
   flex-direction: column;
   position: relative;
   padding: 40px;
-  border-radius: 4px;
+  border-radius: 8px;
   width: 60%;
   height: 550px;
 }
@@ -477,6 +478,7 @@
   display: block;
   max-width: 100%;
   max-height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .map:not(:last-child) {
   margin-bottom: 10px;
