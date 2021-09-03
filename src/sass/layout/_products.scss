@@ -194,24 +194,25 @@
 
 .products-img {
     position: absolute;
-    transform: translateX(-2%) translateY(-273px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-273px);
 }
 
 @media screen and (max-width: 479px) {
     .products-img {
-        transform: translateX(-2%)  translateY(-273px);
+        transform: translateX(-50%)  translateY(-273px);
     }
 }
 
 @media screen and (min-width: 768px) {
     .products-img {
-        transform: translateX(-5.3%)  translateY(-262px);
+        transform: translateX(-50%)  translateY(-262px);
     }
 }
 
 @media screen and (min-width: 1280px) {
     .products-img {
-        transform: translateX(-16%)  translateY(-340px);
+        transform: translateX(-50%)  translateY(-340px);
     }
 }
 
