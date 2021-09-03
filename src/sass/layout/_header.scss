@@ -157,6 +157,14 @@
   background-color: var(--btn-color__alt-hover);
 }
 
+.btn--second-hero {
+    text-decoration: none;
+}
+
+.btn--first-hero{
+    text-decoration: none;
+}
+
 // MOBILE
 @media screen and (max-width: 767px) {
   .header__nav {
@@ -281,7 +289,7 @@
     background-size: cover;
     position: absolute;
     right: 0;
-    top: 90px;
+    top: 64px;
 
     animation-name: opacity;
     animation-duration: 2000ms;
@@ -423,7 +431,7 @@
     background-image: url(../images/tablet/webp-2x/hero-ice-cream-tablet-2x.webp);
     background-size: cover;
     position: absolute;
-    right: 112px;
+    right: 127px;
     bottom: -34px;
 
     animation-name: opacity;
@@ -609,7 +617,6 @@
     padding-bottom: 12px;
     padding-left: 22px;
     padding-right: 22px;
-    text-decoration: none;
   }
 
   .btn--second-hero {
@@ -618,7 +625,6 @@
     padding-bottom: 12px;
     padding-left: 20.5px;
     padding-right: 20.5px;
-    text-decoration: none;
   }
 
   .btn--first--mr {
