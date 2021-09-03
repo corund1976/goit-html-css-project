@@ -6,12 +6,16 @@
     bottom: 70px;
     // background-color: transparent;
 
-    display: none; //инлайново
+    // display: none; //инлайново
 
-    // opacity: 0; //через классы
-    // visibility: hidden;
-    // transition:  opacity 500ms,
-    //     visibility 500ms;
+    opacity: 0; //через классы
+    visibility: hidden;
+    transition:  opacity 500ms,
+        visibility 500ms;
+}
+
+.is-btn-hidden {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -30,10 +34,10 @@
 
 //через классы
 
-// .scroll-up.scrollShow {
-//     opacity: 1;
-//     visibility: visible;
-// }
+.scroll-up.scrollShow {
+    opacity: 1;
+    visibility: visible;
+}
 
 // @media screen and (max-width: 1279px) {
 //     .scroll-up {

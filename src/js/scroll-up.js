@@ -6,21 +6,21 @@ $(function () {
     })
 })
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
-        $('.scroll-up').fadeIn();
-    }
-    else {
-        $('.scroll-up').fadeOut();
-    }
-});
-
-
 // $(window).scroll(function () {
 //     if ($(this).scrollTop() > 500) {
-//         $('.scroll-up').addClass('scrollShow');
+//         $('.scroll-up').fadeIn();
 //     }
 //     else {
-//         $('.scroll-up').removeClass('scrollShow');
+//         $('.scroll-up').fadeOut();
 //     }
 // });
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+        $('.scroll-up').addClass('scrollShow');
+    }
+    else {
+        $('.scroll-up').removeClass('scrollShow');
+    }
+});
