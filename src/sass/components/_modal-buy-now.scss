@@ -25,7 +25,8 @@
   width: 30px;
   height: 30px;
   /* круглая рамка вокруг Х */
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  // border: 1px solid var(--accent-color);
+  border: none;
   border-radius: 50%;
   background-color: transparent;
   padding: 0;
@@ -37,10 +38,11 @@
 
   &:hover .close-btn-buy-now-icon,
   &:focus .close-btn-buy-now-icon {
-    fill: var(--accent-color);
+    fill: var(--btn-color__base-hover);
   }
 }
 /* Делаем плавный ховер при наведении на кнопку закрытия */
 .close-btn-buy-now-icon {
+  fill: var(--btn-color__base);
   transition: fill var(--transition-timing) var(--transition-function);
 }

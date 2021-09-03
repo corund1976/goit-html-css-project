@@ -42,15 +42,18 @@
 }
 /* Иконки на поля "Имя" "Телефон" "Email" */
 .modal-form-buy-now-icon {
+  width: 18px;
+  height: 18px;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(50%, -50%);
-  transition: fill var(--btn-timing) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-timing) var(--transition-timing);
 }
 
 /* Кнопка в модалке "Отправить" */
 .modal-form-buy-now-button {
   align-self: center;
   padding: 15px 35px;
+  min-width: 150px;
 }
