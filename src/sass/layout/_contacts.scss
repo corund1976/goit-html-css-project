@@ -283,13 +283,13 @@
 .modal {
   background-color: var(--bg-color-alt);
   display: flex;
+  flex-direction: column;
   position: relative;
   padding: 40px;
   border-radius: 4px;
   width: 90%;
   height: 90%;
 }
-
 .close-buttn {
   position: absolute;
   top: 10px;
@@ -475,6 +475,6 @@
 }
 .map {
   display: block;
-  margin-right: 10px;
-  margin-left: 10px;
+  max-width: 100%;
+  max-height: 100%;
 }
