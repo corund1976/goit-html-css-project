@@ -107,7 +107,7 @@
     line-height: 1.62;
     color: #000000;
     text-align: left;
-    width: 70%;
+    // width: 70%;
     margin-bottom: 33px;
     margin-top: 46px;
     margin-left: auto;
@@ -120,7 +120,7 @@
     line-height: 1.62;
     color: var(--txt-color-grey);
     text-align: left;
-    width: 70%;
+    // width: 70%;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -131,9 +131,9 @@
       line-height: 1.62;
       color: var(--txt-color-grey);
       text-align: left;
-      width: 70%;
+    //   width: 70%;
       margin-bottom: 20px;
-      margin-left: auto;
+    //   margin-left: auto;
       margin-right: auto;
     }
   }
@@ -317,4 +317,20 @@
     line-height: 1.31;
     height: 45px;
   }
+}
+.cow__img {
+animation-name: spin;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+}
+
+@keyframes spin {
+0% {
+  transform: rotate(0deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
 }
